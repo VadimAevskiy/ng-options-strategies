@@ -1,0 +1,4 @@
+Strategy,Total P&L,Ann. P&L,Sharpe Ratio,Sortino Ratio,Max Drawdown,Calmar Ratio,Win Rate,Profit Factor,Trade VaR (95%),Trade CVaR (95%),Trading Days,Avg|Delta|
+Benchmark (B&H),+165.0,+59.8,0.62,0.92,-171.1,0.35,54%,1.11,-9.74,-13.94,695,1.000
+VolTarget (BS),+275.6,+99.9,1.57,2.68,-67.8,1.47,53%,1.30,-5.90,-7.82,695,0.801
+VolTarget (SV),+275.5,+99.9,1.57,2.67,-67.9,1.47,53%,1.30,-5.90,-7.82,695,0.801

@@ -1,0 +1,9 @@
+numpy>=1.24
+pandas>=2.0
+scipy>=1.11
+matplotlib>=3.7
+seaborn>=0.12
+statsmodels>=0.14
+arch>=6.0
+numba>=0.58
+pyarrow>=14.0

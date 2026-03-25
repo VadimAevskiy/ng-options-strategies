@@ -1,0 +1,4 @@
+Strategy,Total P&L,Ann. P&L,Sharpe Ratio,Sortino Ratio,Max Drawdown,Calmar Ratio,Win Rate,Profit Factor,Trade VaR (95%),Trade CVaR (95%),Trading Days
+Overlay (B&H+Alpha),+738.5,+267.8,1.97,2.12,-165.0,1.62,57%,1.47,-10.97,-17.49,695
+Buy&Hold Futures,+165.0,+59.8,0.62,0.92,-171.1,0.35,54%,1.11,-9.74,-13.94,695
+Strangle Alpha,+573.4,+207.9,2.02,0.54,-144.5,1.44,80%,2.83,-9.76,-30.10,695

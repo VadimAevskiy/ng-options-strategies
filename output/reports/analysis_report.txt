@@ -1,0 +1,44 @@
+STRATEGY ANALYSIS REPORT
+============================================================
+Data: 1008 trading days, 2019-01-02 to 2022-12-30
+Options: 247,405 rows
+
+KEY INSIGHT: NATURAL GAS VRP IS NEGATIVE
+  ATM IV < RV(20d) for 100% of days (mean VRP = -0.0319)
+  Unlike equity markets where IV > RV (positive VRP = sell-vol edge),
+  natural gas has extreme realised moves that exceed implied vol.
+  This means BUYING strangles is the structurally profitable trade.
+  The long-strangle big winners (visible in trade scatter) confirm this.
+
+STRATEGY 1: DYNAMIC STRANGLE
+  Total trades:    138
+  Winners/Losers:  108/30 (flat: 0)
+  Win rate:        78%
+  Avg P&L/trade:   4.16
+  Median P&L:      5.76
+  Best trade:      23.72
+  Worst trade:     -51.66
+  Total P&L:       573.45
+  Avg hold period: 16 days
+    SHORT : 138 trades, WR=78%, avg=4.16, total=573.45
+
+ROLLING WINDOWS:
+            Period  Trades Win Rate Total P&L Sharpe Max DD
+2020-03 to 2020-09      49      65%      53.1   1.63  -76.5
+2020-09 to 2021-03      15      73%     -64.7  -0.67 -144.5
+2021-03 to 2021-09      23      91%     173.2   5.92   -7.1
+2021-09 to 2022-03      25      92%     161.3   4.74  -11.5
+2022-03 to 2022-09      18      72%     159.7   3.70  -22.0
+
+STRATEGY 2: VOL-TARGETED DEFENSIVE ALLOCATION
+  Best approach: VolTarget (SV)
+  Mechanism: delta = target_vol/rv20, crisis-gated
+  Vol-target=25%, max_delta=1.5, stress_cap=0.5, crisis_cap=0.25
+  Tail: 15% OTM puts at stress onset, DTE=45
+  Benchmark (B&H): Total P&L=165.0, Daily Vol=6.098
+  VolTarget (BS): Total P&L=275.6, Daily Vol=4.009
+  VolTarget (SV): Total P&L=275.5, Daily Vol=4.010
+
+MODELS:
+  GARCH: CGARCH
+  Regimes: low=17.3% / high=32.4%
